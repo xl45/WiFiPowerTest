@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xingliu.wifipowertest.MainActivity"
+    tools:deviceIds="wear_round">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload"
+        android:id="@+id/uploadButton"
+        android:layout_below="@+id/downloadButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="uploadClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="download"
+        android:id="@+id/downloadButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="downloadClick"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_above="@+id/downloadButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
