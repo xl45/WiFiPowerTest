@@ -6,29 +6,24 @@
     tools:context="com.example.xingliu.wifipowertest.MainActivity"
     tools:deviceIds="wear_round">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="download 2mb"
+        android:id="@+id/downloadButton"
+        android:onClick="downloadClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="upload"
+        android:text="upload 2mb"
         android:id="@+id/uploadButton"
+        android:onClick="uploadClick"
         android:layout_below="@+id/downloadButton"
         android:layout_centerHorizontal="true"
-        android:onClick="uploadClick"/>
+        android:layout_marginTop="28dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="download"
-        android:id="@+id/downloadButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="downloadClick"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_above="@+id/downloadButton"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
